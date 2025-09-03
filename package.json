@@ -1,0 +1,26 @@
+{
+  "name": "twin-sentience-backend",
+  "version": "1.0.0",
+  "description": "Twin Sentience Dapp, Twin like dapp connects with sentience wallet",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "vDoIT Technologies Ltd, Sector 66, Gurugram, Haryana 122011, India",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.812.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.3"
+  }
+}
