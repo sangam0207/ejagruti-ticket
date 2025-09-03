@@ -11,7 +11,7 @@ dotenv.config();
 const app = express();
 const port = process.env.APP_PORT || 8000;
 
-app.use(cors({ credentials: true, origin: true }));
+app.use(cors());
 app.use(express.urlencoded({ extended: false }));
 app.use(helmet());
 app.use(helmet.crossOriginResourcePolicy({ policy: 'cross-origin' }));
