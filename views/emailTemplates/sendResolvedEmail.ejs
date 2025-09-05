@@ -1,51 +1,101 @@
-<table class="es-content-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" role="none" style="border-collapse:collapse; width:600px; background-color:#ffffff; border-radius:10px; box-shadow:0 4px 15px rgba(0, 0, 0, 0.1); font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">
+<!-- ===== E-Jagruti • Ticket Resolved (styled like screenshot) ===== -->
+<table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="margin:0; padding:0; background:#f6f7fb; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">
   <tr>
-    <td align="left" style="padding:30px 30px 20px 30px; font-size:16px; color:#333; line-height:26px;">
-      <!-- Greeting -->
-      <p style="margin:0 0 16px 0; font-size:18px; color:#4A90E2; font-weight:bold;">Hi <strong><%= name %></strong>,</p>
+    <td align="center" style="padding:0;">
 
-      <!-- Ticket status message -->
-      <p style="margin:0 0 16px 0;">
-        Good news! Your support request regarding <strong><%= topic %></strong> has been <span style="color:#28a745; font-weight:bold;">resolved</span> and the ticket <strong>ID <%= ticketId %></strong> has been closed.
-      </p>
+      <!-- Header (gradient bar with emblem + brand) -->
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;">
+        <tr>
+          <td style="
+            background: linear-gradient(135deg,#ffb057 0%, #ff7a1a 45%, #ff5e00 100%);
+            border-top-left-radius:12px;border-top-right-radius:12px;
+            padding:14px 18px; color:#fff;">
+            <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+              <tr>
+                <td valign="middle" style="white-space:nowrap;">
+                  <img src="https://pbs.twimg.com/media/FoxpyFJacAQBdcZ.png" width="56" height="56" alt="Emblem" style="display:inline-block; border:0; vertical-align:middle;">
+                  <span style="margin-left:8px; font-size:16px; line-height:1; vertical-align:middle;">
+                    Government of India
+                  </span>
+                </td>
+                <td align="right" valign="middle">
+                  <span style="font-size:22px; font-weight:700; color:#b40000; background:#fff; padding:4px 10px; border-radius:6px; display:inline-block;">
+                    E-Jagruti
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
 
-      <!-- Admin comment -->
-      <p style="margin:0 0 16px 0;">
-        <strong>Admin Comment:</strong><br>
-        <em style="display:block; background-color:#f9f9f9; padding:12px; border-left:4px solid #4A90E2; border-radius:8px; color:#555; font-style:italic;">
-          <%= adminComment %>
-        </em>
-      </p>
+      <!-- Card -->
+      <table class="es-content-body" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center" role="none"
+             style="border-collapse:collapse; width:600px; background-color:#ffffff; border-bottom-left-radius:12px; border-bottom-right-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.12);">
+        <tr>
+          <td align="left" style="padding:26px 30px 18px 30px; font-size:16px; color:#222; line-height:26px;">
 
-      <!-- Query details -->
-      <p style="margin:0 0 16px 0; font-weight:bold; color:#4A90E2;">
-        Your Query:<br>
-        <span style="font-weight:normal; color:#555;"><%= resolution %></span>
-      </p>
+            <!-- Greeting -->
+            <p style="margin:0 0 14px 0; font-size:18px; color:#0b1d39; font-weight:bold;">
+              Hi <strong><%= name %></strong>,
+            </p>
 
-      <!-- Further contact and thank you -->
-      <p style="margin:0 0 16px 0;">
-        If you feel the issue is not resolved or if you have any further questions, feel free to contact us directly.
-      </p>
+            <!-- Ticket status message -->
+            <p style="margin:0 0 14px 0;">
+              Good news! Your support request regarding
+              <strong style="color:#ff7a1a;"><%= topic %></strong>
+              has been <span style="color:#28a745; font-weight:bold;">resolved</span> and the ticket
+              <strong style="color:#ff7a1a;">ID <%= ticketId %></strong> has been closed.
+            </p>
 
-      <p style="margin:0 0 16px 0;">
-        Thank you for your patience and for reaching out to E-Jagruti Support.
-      </p>
+            <!-- Admin comment -->
+            <p style="margin:0 0 14px 0;">
+              <strong style="color:#0e6b2f;">Admin Comment:</strong><br>
+              <em style="display:block; background-color:#f9fff9; padding:12px 14px; border-left:4px solid #28a745; border-radius:8px; color:#2f6b2f; font-style:italic;">
+                <%= adminComment %>
+              </em>
+            </p>
 
-      <!-- Closing remarks -->
-      <p style="margin:0;">
-        Warm regards,<br>
-        <strong>E-Jagruti Support Team</strong>
-      </p>
-    </td>
-  </tr>
+            <!-- Query details -->
+            <p style="margin:0 0 14px 0; font-weight:bold; color:#0b1d39;">
+              Your Query:<br>
+              <span style="font-weight:normal; color:#555;"><%= resolution %></span>
+            </p>
 
-  <!-- Footer -->
-  <tr>
-    <td align="center" style="padding:10px 0;">
-      <p style="margin:0; font-size:12px; color:#888;">
-        &copy; 2025 E-Jagruti. All Rights Reserved.
-      </p>
+            <!-- Further contact (orange callout) -->
+            <div style="margin:16px 0; background:#fff8f3; border:1px solid #ffd7bf; padding:12px 14px; border-radius:10px; color:#444;">
+              If you feel the issue is not resolved or if you have any further questions,
+              feel free to contact us directly.
+            </div>
+
+            <!-- Thanks -->
+            <p style="margin:0 0 14px 0;">
+              Thank you for your patience and for reaching out to E-Jagruti Support.
+            </p>
+
+            <!-- Closing remarks -->
+            <p style="margin:0;">
+              Warm regards,<br>
+              <strong>E-Jagruti Support Team</strong>
+            </p>
+          </td>
+        </tr>
+
+        <!-- Footer -->
+        <tr>
+          <td align="center" style="padding:10px 0 18px 0;">
+            <p style="margin:0; font-size:12px; color:#8a8a8a;">
+              &copy; 2025 E-Jagruti. All Rights Reserved.
+            </p>
+          </td>
+        </tr>
+      </table>
+
+      <!-- Bottom spacer -->
+      <table width="100%" cellpadding="0" cellspacing="0" role="presentation" style="max-width:600px;">
+        <tr><td style="height:28px; line-height:28px; font-size:0;">&nbsp;</td></tr>
+      </table>
+
     </td>
   </tr>
 </table>
